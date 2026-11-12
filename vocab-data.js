@@ -1,0 +1,148 @@
+const packs = [
+ {topic:'教育',words:[
+  ['curriculum','课程','school curriculum','The school curriculum includes science and art.'],
+  ['compulsory','必修的；义务的','compulsory education','Education is compulsory for children in many countries.'],
+  ['literacy','读写能力','improve literacy','Reading every day can improve literacy.'],
+  ['academic','学术的','academic performance','Sleep can affect a student’s academic performance.'],
+  ['tuition','学费；教学','pay tuition fees','Some families find university tuition expensive.'],
+  ['scholarship','奖学金','receive a scholarship','She received a scholarship for her excellent grades.'],
+  ['assessment','评估；考核','regular assessment','Regular assessment helps teachers understand students’ needs.'],
+  ['achievement','成就；成绩','a sense of achievement','Finishing a difficult project gave him a sense of achievement.'],
+  ['discipline','自律；学科','self-discipline','Learning a language requires self-discipline.'],
+  ['critical thinking','批判性思维','develop critical thinking','Class discussions can help students develop critical thinking.'],
+  ['vocational','职业教育的','vocational training','Vocational training can prepare people for practical jobs.'],
+  ['graduate','毕业生；毕业','graduate from university','Many graduates look for work in their final year.']
+ ]},
+ {topic:'工作',words:[
+  ['employment','就业','employment opportunities','The city offers more employment opportunities for young people.'],
+  ['occupation','职业','choose an occupation','People may change their occupation during their lives.'],
+  ['colleague','同事','work with colleagues','Good communication helps colleagues work together.'],
+  ['salary','薪水','a monthly salary','A higher salary is not the only reason to choose a job.'],
+  ['promotion','晋升','get a promotion','She worked hard and got a promotion last year.'],
+  ['workload','工作量','heavy workload','A heavy workload can make people feel stressed.'],
+  ['remote','远程的','remote work','Remote work saves some people time on commuting.'],
+  ['flexible','灵活的','flexible working hours','Flexible working hours help parents manage family life.'],
+  ['productivity','效率；生产力','increase productivity','Short breaks may help increase productivity.'],
+  ['skill','技能','develop a skill','Students can develop useful skills through part-time work.'],
+  ['internship','实习','do an internship','An internship gives students experience before graduation.'],
+  ['unemployment','失业','reduce unemployment','Job training may help reduce unemployment.']
+ ]},
+ {topic:'环境',words:[
+  ['pollution','污染','air pollution','Air pollution can affect people’s health.'],
+  ['emission','排放物；排放','carbon emissions','Public transport can help reduce carbon emissions.'],
+  ['renewable','可再生的','renewable energy','Solar power is a form of renewable energy.'],
+  ['conservation','保护；保存','wildlife conservation','Wildlife conservation protects animals and their habitats.'],
+  ['sustainable','可持续的','sustainable development','Cities need a sustainable plan for future growth.'],
+  ['biodiversity','生物多样性','protect biodiversity','Healthy forests help protect biodiversity.'],
+  ['habitat','栖息地','natural habitat','Building roads can damage the natural habitat of some animals.'],
+  ['waste','浪费；废弃物','reduce food waste','Families can reduce food waste by planning meals.'],
+  ['recycle','回收利用','recycle paper','People can recycle paper, glass, and cans.'],
+  ['drought','干旱','a long drought','A long drought can make it difficult to grow crops.'],
+  ['climate','气候','climate change','Climate change may bring more extreme weather.'],
+  ['resource','资源','natural resources','Water is one of our most important natural resources.']
+ ]},
+ {topic:'科技',words:[
+  ['innovation','创新','technological innovation','Technological innovation has changed how people communicate.'],
+  ['digital','数字化的','digital technology','Digital technology is now part of everyday life.'],
+  ['access','获取；使用权','access to the internet','Students need reliable access to the internet.'],
+  ['device','设备','mobile device','Many people use a mobile device to study English.'],
+  ['artificial intelligence','人工智能','artificial intelligence tools','Artificial intelligence tools can support learning.'],
+  ['privacy','隐私','protect personal privacy','People should protect their personal privacy online.'],
+  ['efficient','高效的','an efficient system','Online services can make some tasks more efficient.'],
+  ['data','数据','collect data','The app collects data to understand user needs.'],
+  ['automation','自动化','automation in factories','Automation can make factory work faster.'],
+  ['communication','交流；沟通','online communication','Online communication helps friends stay in touch.'],
+  ['barrier','障碍','language barrier','A language barrier can make travel more difficult.'],
+  ['dependence','依赖','dependence on technology','Too much dependence on technology may reduce face-to-face contact.']
+ ]},
+ {topic:'健康',words:[
+  ['well-being','身心健康；幸福','mental well-being','Exercise can improve both physical and mental well-being.'],
+  ['nutrition','营养','good nutrition','Good nutrition is important for children’s growth.'],
+  ['balanced diet','均衡饮食','follow a balanced diet','A balanced diet includes a variety of foods.'],
+  ['exercise','锻炼','regular exercise','Regular exercise can help people sleep better.'],
+  ['sedentary','久坐的','a sedentary lifestyle','A sedentary lifestyle may increase health risks.'],
+  ['disease','疾病','prevent disease','Clean water can help prevent some diseases.'],
+  ['prevention','预防','disease prevention','Prevention is often easier than treatment.'],
+  ['mental health','心理健康','support mental health','Schools should support students’ mental health.'],
+  ['stress','压力','deal with stress','Walking outside helps him deal with stress.'],
+  ['treatment','治疗','medical treatment','Some patients need long-term medical treatment.'],
+  ['obesity','肥胖','childhood obesity','Healthy school meals may help address childhood obesity.'],
+  ['sleep','睡眠','get enough sleep','Students need enough sleep to concentrate in class.']
+ ]},
+ {topic:'城市生活',words:[
+  ['urban','城市的','urban life','Urban life offers many services and job opportunities.'],
+  ['infrastructure','基础设施','public infrastructure','Good infrastructure makes a city easier to live in.'],
+  ['public transport','公共交通','use public transport','Many Wuhan residents use public transport to get around.'],
+  ['commute','通勤','daily commute','A shorter commute gives people more free time.'],
+  ['congestion','拥堵','traffic congestion','Traffic congestion is common during rush hour.'],
+  ['residential','居住的','residential area','The new library is close to a residential area.'],
+  ['facility','设施','sports facilities','The school has modern sports facilities.'],
+  ['affordable','负担得起的','affordable housing','Affordable housing is important for young families.'],
+  ['district','区域；地区','business district','The business district is busy on weekdays.'],
+  ['green space','绿地','create green spaces','Green spaces give residents a place to relax.'],
+  ['pedestrian','行人','pedestrian safety','Better street lighting can improve pedestrian safety.'],
+  ['neighbourhood','街区；社区','a quiet neighbourhood','She lives in a quiet neighbourhood near the university.']
+ ]},
+ {topic:'社会',words:[
+  ['inequality','不平等','reduce inequality','Education can help reduce inequality.'],
+  ['community','社区；群体','local community','The library is an important part of the local community.'],
+  ['population','人口','population growth','Population growth can put pressure on city services.'],
+  ['elderly','老年人；年长的','care for the elderly','Families and communities can care for the elderly.'],
+  ['household','家庭；住户','household income','Rising prices affect household income.'],
+  ['diversity','多样性','cultural diversity','Cultural diversity makes a city more interesting.'],
+  ['opportunity','机会','equal opportunity','Every child should have an equal opportunity to learn.'],
+  ['poverty','贫困','reduce poverty','Good education may help reduce poverty.'],
+  ['volunteer','志愿者；自愿做','volunteer work','Many students do volunteer work in their community.'],
+  ['responsibility','责任','social responsibility','Companies have a social responsibility to protect workers.'],
+  ['public service','公共服务','improve public services','Local government should improve public services.'],
+  ['generation','一代人','younger generation','The younger generation often learns new technology quickly.']
+ ]},
+ {topic:'文化与旅行',words:[
+  ['heritage','遗产','cultural heritage','Museums help protect a country’s cultural heritage.'],
+  ['tradition','传统','local tradition','The festival is an important local tradition.'],
+  ['custom','习俗','local customs','Visitors should learn about local customs.'],
+  ['cuisine','烹饪；菜系','local cuisine','Trying local cuisine is part of the travel experience.'],
+  ['tourist','游客','attract tourists','The old town attracts tourists throughout the year.'],
+  ['destination','目的地','popular destination','The lake is a popular destination for families.'],
+  ['experience','经历；体验','travel experience','Travel can give young people valuable experience.'],
+  ['preserve','保护；保存','preserve a tradition','The community works to preserve its traditions.'],
+  ['festival','节日；庆典','music festival','The city holds a music festival every summer.'],
+  ['cultural exchange','文化交流','promote cultural exchange','Student trips can promote cultural exchange.'],
+  ['landmark','地标','historic landmark','The bridge has become a well-known landmark.'],
+  ['local specialty','地方特色食品','try a local specialty','Visitors often try a local specialty when they travel.']
+ ]},
+ {topic:'饮食与生活',words:[
+  ['ingredient','食材；成分','fresh ingredients','Fresh ingredients can make a simple meal delicious.'],
+  ['homemade','自制的','homemade food','Homemade food often reminds people of their family.'],
+  ['street food','街头小吃','popular street food','Hot dry noodles are popular street food in Wuhan.'],
+  ['specialty','特色食品；专长','a local specialty','Doupi is a well-known local specialty in Wuhan.'],
+  ['nutritious','有营养的','nutritious meal','A nutritious meal can help students stay focused.'],
+  ['portion','一份；份量','a small portion','A small portion is enough for a light breakfast.'],
+  ['flavour','味道；风味','rich flavour','The sauce gives the noodles a rich flavour.'],
+  ['traditional','传统的','traditional dish','The restaurant serves a traditional breakfast.'],
+  ['takeaway','外卖食品；外带','order a takeaway','People sometimes order a takeaway when they are busy.'],
+  ['habit','习惯','healthy eating habits','Healthy eating habits can begin at school.'],
+  ['convenient','方便的','a convenient option','A quick breakfast is convenient on a busy morning.'],
+  ['variety','多样；种类','a variety of food','A variety of food makes a meal more enjoyable.']
+ ]},
+ {topic:'表达观点',words:[
+  ['express','表达','express an opinion','Students should feel free to express an opinion.'],
+  ['explain','解释','explain a reason','She explained why she chose to study mathematics.'],
+  ['discuss','讨论','discuss an issue','The class discussed the advantages of public transport.'],
+  ['describe','描述','describe an experience','He described a memorable trip to his hometown.'],
+  ['compare','比较','compare two options','We compared studying online with learning in a classroom.'],
+  ['advantage','优点','a major advantage','One major advantage of the bus is its low cost.'],
+  ['disadvantage','缺点','a possible disadvantage','A possible disadvantage is the long waiting time.'],
+  ['benefit','好处；受益','benefit from practice','Learners benefit from regular speaking practice.'],
+  ['evidence','证据','provide evidence','The report provides evidence for this idea.'],
+  ['opinion','观点','in my opinion','In my opinion, libraries are still useful.'],
+  ['develop','发展；培养','develop confidence','Daily practice can help students develop confidence.'],
+  ['confidence','信心','build confidence','Small successes help learners build confidence.']
+ ]}
+];
+
+export const TOPICS = packs.map(p=>p.topic);
+export const WORDS = packs.flatMap((pack, packIndex)=>pack.words.map((word, wordIndex)=>({
+ id:`w${packIndex+1}-${wordIndex+1}`,topic:pack.topic,day:packIndex*2+Math.floor(wordIndex/6)+1,
+ word:word[0],meaning:word[1],collocation:word[2],example:word[3]
+})));
