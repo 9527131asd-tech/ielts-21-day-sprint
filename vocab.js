@@ -1,4 +1,4 @@
-import { WORDS, TOPICS } from './vocab-data.js';
+import { WORDS, TOPICS } from './vocab-data.js?v=20261112a';
 
 const STORAGE_KEY='ielts-word-sprint:v1';
 const byId=new Map(WORDS.map(w=>[w.id,w]));
