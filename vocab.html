@@ -18,7 +18,7 @@
 
     <main>
       <section class="hero">
-        <div><p class="eyebrow">21-DAY VOCABULARY SPRINT</p><h1>每天记 6 个，<br>把单词用进表达里。</h1><p class="hero-copy">从常见雅思话题词汇开始。先回忆，再看释义；隔天复习，让认识的词慢慢变成会用的词。</p></div>
+        <div><p class="eyebrow">21-DAY VOCABULARY SPRINT</p><h1>每天冲刺 500 词，<br>把单词用进表达里。</h1><p class="hero-copy">词库来自你上传的雅思核心词汇预览和北外听力词汇资料。前 6 天每天 500 词，第 7 天完成剩余词条；之后用间隔复习和测验巩固。</p></div>
         <div class="hero-stats"><div><strong id="learned-count">0</strong><span>已学词汇</span></div><div><strong id="due-count">0</strong><span>今日待复习</span></div><div><strong id="streak-count">0</strong><span>连续学习天数</span></div></div>
       </section>
 
@@ -37,7 +37,7 @@
       </div>
 
       <section id="learn-view" class="view active-view">
-        <div class="section-heading"><div><p class="eyebrow">NEW WORDS</p><h2>今天的 6 个新词</h2></div><span id="new-word-topic" class="topic-pill"></span></div>
+        <div class="section-heading"><div><p class="eyebrow">NEW WORDS</p><h2 id="new-words-heading">今天的新词</h2></div><span id="new-word-topic" class="topic-pill"></span></div>
         <div id="flashcard-area" class="flashcard-area"></div>
         <div id="word-grid" class="word-grid"></div>
         <div class="session-actions"><button id="start-cards" class="button primary">开始抽认卡</button><span id="learn-status" class="hint">点喇叭听发音；卡片背面有释义、搭配和例句。</span></div>
@@ -55,12 +55,13 @@
       </section>
 
       <section id="library-view" class="view" hidden>
-        <div class="section-heading"><div><p class="eyebrow">WORD BANK</p><h2>词汇库</h2><p><span id="library-count">120</span> 个常见话题词，支持搜索和筛选。</p></div></div>
+        <div class="section-heading"><div><p class="eyebrow">WORD BANK</p><h2>词汇库</h2><p>找到 <span id="library-count">0</span> 个词条；输入关键词搜索全部词库。</p></div></div>
         <div class="library-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input id="word-search" type="search" placeholder="搜索英文、中文或话题" autocomplete="off"></label><label class="sr-only" for="topic-filter">筛选话题</label><select id="topic-filter"><option value="all">全部话题</option></select></div>
         <div id="library-list" class="library-list"></div>
+        <div class="load-more-wrap"><button id="library-more" class="button" hidden>加载更多词条</button></div>
       </section>
 
-      <footer class="footer"><span>从理解到会用，每天进步一点。</span><span>所有词汇进度保存在当前浏览器</span></footer>
+      <footer class="footer"><span>共 3,192 个去重词条；完整词汇 PDF 附件为预览版，未包含其完整词表。</span><span>词汇来源：上传资料 · 学习记录保存在当前浏览器</span></footer>
     </main>
   </div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
